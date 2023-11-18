@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dunkelgrau, wie auf dem Dashboard */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#timer {
+    text-align: center;
+    background-color: #333; /* Angepasst an das Dunkelgrau des Dashboards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Leicht intensiverer Schatten für Tiefe */
+    width: 300px; /* Festgelegte Breite */
+}
+
+#time {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    min-height: 50px;
+    background-color: #222; /* Etwas dunkler als die Box, für Kontrast */
+    padding: 10px;
+    border-radius: 5px; /* Abgerundete Ecken für die Zeitanzeige */
+}
+
+button {
+    background-color: #555; /* Angepasst an das Dunkelgrau des Dashboards */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+    background-color: #666; /* Hervorgehobene Farbe beim Hovern */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95); /* Click-Effekt */
+}
